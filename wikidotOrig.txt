@@ -1,0 +1,322 @@
+[[include :scp-cs:theme:black-highlighter-theme]]
+[!--[[include :scp-cs:component:toggle-sidebar-bhl]]--]
+[[include :scp-wiki:component:centered-header-bhl]]
+[[include :scp-wiki:component:fade-in speed=3]]
+[[module CSS]]
+/*Kód je zkopírovaný a upravený z http://scptestwiki.wikidot.com/vibrant-theme. Úpravy jsou vytvořeny mnou, uživatelem Modular, zatímco základní theme vytvořil uživatel/ka KaraKatt*/
+
+@import url("https://use.typekit.net/afb2wxe.css");
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap');
+
+/* All Vars Used */
+
+:root {
+    /* S-CSS-P Integration */
+    /* If you're making a new CSS theme, please include the following three variables at minimum. */
+    --theme-base: "black-highlighter";
+    /* must be either "black-highlighter" or "sigma9" */
+    --theme-id: "black-highlighter";
+    /* set this to the URL of your theme's page - eg for "component:ar-theme", set it to "ar-theme" */
+    --theme-name: "nu-SCP Theme";
+    /* set this to your theme's full name */
+
+    /* Header */
+    --logo-image: url("https://nu-scptheme.github.io/Black-Highlighter/img/logo.svg");
+    --header-title: "SCP NADACE";
+    --header-subtitle: "SLOŽKA ZAMĚSTNANCE: DR. FILIP PILL";
+
+    /* Typefaces */
+    --body-font: proxima-nova, sans-serif;
+    --header-font: flood-std, sans-serif;
+    --title-font: 'Oswald', sans-serif;
+    --mono-font: "Space Mono", "Andale Mono", "Courier New", Courier, monospace;
+
+    /* Standard Colors */
+    --light-yellow: 255, 235, 201;
+    /* Light yellow */
+    --yellow: 255, 224, 169;
+    /* Yellow */
+    --dark-yellow: 251, 212, 144;
+    /* dark Yellow */
+    --light-peach: 254, 217, 203;
+    /* Light peach */
+    --peach: 255, 180, 154;
+    /* A peach color */
+    --dark-peach: 252, 170, 140;
+    /* Dark peach */
+    --light-pink: 255, 123, 154;
+    /* bright pink */
+    --pink: 255, 79, 121;
+    /* bright pink */
+    --dark-pink: 240, 64, 105;
+    /* bright pink */
+    --light-purple: 183, 41, 168;
+    /* a vibrant purple */
+    --purple: 124, 22, 161;
+    /* a vibrant purple */
+    --dark-purple: 85, 16, 110;
+    /* a vibrant purple */
+    --dark-blue: 23, 24, 59;
+    /* light accent gray for login status */
+
+
+    /* Background and Header Colors */
+    --background-gradient-color: var(--light-pink);
+    --header-gradient-color-bottom: var(--peach);
+    --header-gradient-color-middle: var(--light-pink);
+    --header-gradient-color-top: var(--pink);
+
+    /* Primary Theme Colors */
+    --swatch-background: var(--dark-blue);
+    --swatch-primary: var(--light-purple);
+    --swatch-primary-darker: var(--purple);
+    --swatch-primary-darkest: var(--dark-purple);
+    /* Primary Text Colors */
+    --swatch-text-dark: var(--yellow);
+    --swatch-text-light: var(--light-yellow);
+    --swatch-important-text: var(--dark-yellow);
+
+    /* Primary Menu Colors */
+    --swatch-menubg-color: var(--dark-blue);
+    --swatch-menubg-light-color: var(--dark-blue);
+    --swatch-menubg-medium-color: var(--yellow);
+    --swatch-menubg-medium-dark-color: var(--purple);
+    --swatch-menubg-dark-color: var(--dark-blue);
+    --swatch-menubg-black-color: var(--dark-purple);
+    --swatch-menubg-hover-color: var(--dark-purple);
+    --swatch-menutxt-dark-color: var(--light-yellow);
+    --swatch-menutxt-light-color: var(--light-yellow);
+    --swatch-border-color: var(--light-purple);
+    /* Primary Header Colors */
+    --swatch-headerh1-color: var(--yellow);
+    --swatch-headerh2-color: var(--yellow);
+    --swatch-topmenu-border-color: var(--light-peach);
+    --swatch-topmenu-bg-color: var(--peach);
+
+    /* Link Colors */
+    --link-color: var(--peach);
+    --visited-link-color: var(--dark-peach);
+    --hover-link-color: var(--light-peach);
+    --newpage-color: var(--light-peach);
+    --sidebar-links-text: var(--peach);
+
+    /* Rating Module Colors */
+    --rating-module-button-color: var(--dark-peach);
+    --rating-module-button-plus-color: 0, 200, 0;
+    --rating-module-button-negative-color: 200, 0, 0;
+    --rating-module-button-cancel-color: 200, 200, 200;
+    --rating-module-button-credit-color: 50, 50, 50;
+    --rating-module-text-color: var(--swatch-menutxt-dark-color);
+    --rating-module-text-hover-color: var(--swatch-menutxt-light-color);
+}
+
+table.wiki-content-table th {
+    color: rgb(var(--dark-gray-monochrome));
+}
+
+.c_achievement {
+    border-width: 2px;
+    border-color: rgb(255, 224, 169) !important;
+    background-color: rgb(var(--dark-blue)) !important;
+}
+
+#page-title {
+    text-align: center;
+    font-size: 31px;
+}
+
+#header h1 a::before {
+    color: rgb(255, 160, 125);
+}
+
+#search-top-box input.empty {
+    background: rgb(var(--dark-blue));
+    color: rgb(var(--light-peach));
+}
+
+form#edit-page-form {
+    background-color: rgba(var(--light-purple), 0.25);
+}
+
+textarea,
+input.text {
+    background-color: rgb(var(--dark-blue));
+    color: rgb(var(--light-yellow));
+    padding: 0.5em;
+}
+
+#lock-info {
+    background-color: rgb(var(--dark-blue));
+}
+
+div.buttons input,
+input.button,
+button,
+file,
+a.button {
+    background-color: rgb(var(--purple));
+    color: rgb(var(--dark-peach));
+    border-color: rgb(var(--dark-peach));
+}
+
+div.buttons input:hover,
+input.button:hover,
+button:hover,
+a.button:hover {
+    background-color: rgba(var(--peach) .30);
+}
+
+.owindow .title {
+    background-color: rgb(var(--swatch-menubg-dark-color));
+}
+
+#odialog-container {
+    background-color: rgba(var(--peach) .30);
+}
+
+.title.modal-header,
+.owindow,
+.hovertip {
+    background-color: rgb(var(--swatch-menubg-dark-color));
+}
+
+.owindow .button-bar a {
+    background-color: rgb(var(--swatch-menubg-dark-color));
+    color: rgb(var(--light-yellow));
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: rgb(var(--yellow));
+}
+
+.change-textarea-size,
+.btn,
+.btn-default {
+    color: rgb(var(--purple));
+}
+
+/* SCROLLBAR AND SIDEBAR */
+::-webkit-scrollbar {
+    width: 18px;
+    background: transparent;
+}
+
+::-webkit-scrollbar-track {
+    background: rgb(var(--dark-blue));
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgb(var(--light-peach));
+    border: rgb(var(--purple)) 3px solid;
+    border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: rgb(var(--dark-peach));
+}
+
+html,
+body,
+#side-bar:hover {
+    scrollbar-color: rgb(var(--dark-peach)) rgb(var(--dark-blue));
+}
+
+blockquote,
+div.blockquote,
+#toc {
+    background-color: rgb(28, 29, 71);
+    border: solid 2px rgb(var(--dark-blue));
+    box-shadow: 10px 10px 10px 0.1px rgb(12, 12, 31);
+}
+
+#breadcrumbs,
+.pseudocrumbs {
+    text-align: center;
+    padding-top: 10px;
+}
+
+#top-bar div.top-bar>ul>li>ul>li>a::before,
+#top-bar div.top-bar>ul>li>ul>li>ul>li>a::before,
+#top-bar div.top-bar>ul>li>ul>li>a:hover::before {
+    background: var(--purple);
+}
+[[/module]]
++ Examples
+
+[[include component:image-block name=http://scptestwiki.wikidot.com/local--files/karas-theme/Coffee%20Shoppe%20Logo.png]]
+
+A horizontal rule can be created with 5 hyphens "- - - - -" and extends across the whole page if it's not placed inside anything (eg a blockquote). The lines separating sections of this document are horizontal rules.
+
+-----
+
+Titles can be created by putting between one and six plus "+" at the start of the line.
+
+[[collapsible show="+ Titles" hide="- Titles"]]
+
++ First Title
+
+++ Second Title
+
++++ Third Title
+
+++++ Fourth Title
+
++++++ Fifth Title
+
+++++++ Sixth Title
+
+
+[[/collapsible]]
+
+@@ @@
+
+[[tabview]]
+[[tab Tabulator]]
+This is a tab view.
+[[/tab]]
+[[tab Tabulation]]
+Hey look, more text here.
+
+How quaint.
+[[/tab]]
+[[tab Long Tab]]
+This is a long tab. It contains a lot of text.[[footnote]] This is a footnote. [[/footnote]]
+
+This is a long tab. It contains a lot of text.
+
+This is a long tab. It contains a lot of text.
+
+This is a long tab. It contains a lot of text.
+
+This is a long tab. It contains a lot of text.
+
+This is a long tab. It contains a lot of text.
+
+This is a long tab. It contains a lot of text.
+
+This is a long tab. It contains a lot of text.
+[[/tab]]
+
+[[tab Empty Tab]]
+[[/tab]]
+[[/tabview]]
+
+> This is a blockquote, created by putting "> " at the start of each line.
+>
+> More text
+> -----
+> That's a horizontal rule
+>
+>> Nested blockquotes
+
+||~ This is a ||~ table ||
+||You should know || how to make these ||
+||||already ||
+
+@@@@
+@@@@
