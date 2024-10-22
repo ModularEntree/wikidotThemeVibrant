@@ -1,10 +1,14 @@
-/*Kód je zkopírovaný a upravený z http://scptestwiki.wikidot.com/vibrant-theme. Úpravy jsou vytvořeny mnou, uživatelem Modular,zatímco základní theme vytvořil uživatel/ka KaraKatt*/
+/*
+ * Following code represents fixed and modified theme from http://scptestwiki.wikidot.com/vibrant-theme.
+ * Original Author: KaraKatt
+ * Rework: Modular
+ * This theme is intended to use it on Wikidot.com site, specifically on SCP Foundation branches.
+*/
 
-@import url("https://use.typekit.net/afb2wxe.css");
+/*@import url("https://use.typekit.net/afb2wxe.css");*/
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap');
 
 /* All Vars Used */
-@supports((display: -ms-grid) or (display: grid)) {
 :root {
     /* S-CSS-P Integration */
     /* If you're making a new CSS theme, please include the following three variables at minimum. */
@@ -33,7 +37,7 @@
     /* Yellow */
     --dark-yellow: 251, 212, 144;
     /* dark Yellow */
-    --light-peach:254, 217, 203;
+    --light-peach: 254, 217, 203;
     /* Light peach */
     --peach: 255, 180, 154;
     /* A peach color */
@@ -49,7 +53,7 @@
     /* a vibrant purple */
     --purple: 124, 22, 161;
     /* a vibrant purple */
-    --dark-purple:85, 16, 110;
+    --dark-purple: 85, 16, 110;
     /* a vibrant purple */
     --dark-blue: 23, 24, 59;
     /* light accent gray for login status */
@@ -105,100 +109,112 @@
     --rating-module-text-hover-color: var(--swatch-menutxt-light-color);
 }
 
-table.wiki-content-table th {
+/*table.wiki-content-table th {
     color: rgb(var(--dark-gray-monochrome));
-}
+}*/
 
 .c_achievement {
     border-width: 2px;
     border-color: rgb(255, 224, 169) !important;
     background-color: rgb(var(--dark-blue)) !important;
 }
+
 #page-title {
-    text-align:  center;
+    text-align: center;
     font-size: 31px;
 }
-#header h1 a::before{
-  color: rgb(255, 160, 125);
+
+#header h1 a::before {
+    color: rgb(255, 160, 125);
 }
+
 form#edit-page-form {
-background-color: rgba(var(--light-purple), 0.25);
+    background-color: rgba(var(--light-purple), 0.25);
 }
+
 textarea,
 input.text {
-background-color: rgb(var(--dark-blue));
-color: rgb(var(--light-yellow));
-padding: 0.5em;
+    background-color: rgb(var(--dark-blue));
+    color: rgb(var(--light-yellow));
+    padding: 0.5em;
 }
- 
+
 #lock-info {
-background-color: rgb(var(--dark-blue));
+    background-color: rgb(var(--dark-blue));
 }
- 
-    div.buttons input,
-    input.button,
-    button,
-    file,
-    a.button {
-     background-color: rgb(var(--purple));
-     color: rgb(var(--dark-peach));
-     border-color: rgb(var(--dark-peach));
-    }
- 
-    div.buttons input:hover,
-    input.button:hover,
-    button:hover,
-    a.button:hover {
-     background-color: rgba(var(--peach) .30);
-    }
-    .owindow .title {
-        background-color: rgb(var(--swatch-menubg-dark-color));
-    }
-     #odialog-container {
-        background-color: rgba(var(--peach) .30);
-    }
-    .title.modal-header,
-    .owindow,
-    .hovertip {
-        background-color: rgb(var(--swatch-menubg-dark-color));
-    }
- 
-    .owindow .button-bar a {
-        background-color: rgb(var(--swatch-menubg-dark-color));
-   color: rgb(var(--light-yellow:));
+
+div.buttons input,
+input.button,
+button,
+file,
+a.button {
+    background-color: rgb(var(--purple));
+    color: rgb(var(--dark-peach));
+    border-color: rgb(var(--dark-peach));
 }
+
+div.buttons input:hover,
+input.button:hover,
+button:hover,
+a.button:hover {
+    background-color: rgba(var(--peach) .30);
+}
+
+.owindow .title {
+    background-color: rgb(var(--swatch-menubg-dark-color));
+}
+
+#odialog-container {
+    background-color: rgba(var(--peach) .30);
+}
+
+.title.modal-header,
+.owindow,
+.hovertip {
+    background-color: rgb(var(--swatch-menubg-dark-color));
+}
+
+.owindow .button-bar a {
+    background-color: rgb(var(--swatch-menubg-dark-color));
+    color: rgb(var(--light-yellow));
+}
+
 h1, h2, h3, h4, h5, h6 {
-color: rgb(var(--yellow));
+    color: rgb(var(--yellow));
 }
-.change-textarea-size, ,.btn ,.btn-default {
-color: rgb(var(--purple));
+
+.change-textarea-size,
+.btn,
+.btn-default {
+    color: rgb(var(--purple));
 }
+
 /* SCROLLBAR AND SIDEBAR */
 ::-webkit-scrollbar {
-  width: 18px;
-  background: #transparent;
+    width: 18px;
+    background: transparent;
 }
- 
+
 ::-webkit-scrollbar-track {
-  background: rgb(var(--dark-blue));
+    background: rgb(var(--dark-blue));
 }
- 
+
 ::-webkit-scrollbar-thumb {
-  background: rgb(var(--dark-yellow));
-  border: rgb(var(--purple)) 3px solid;
-  border-radius: 3px;
+    background: rgb(var(--dark-yellow));
+    border: rgb(var(--purple)) 3px solid;
+    border-radius: 3px;
 }
- 
+
 ::-webkit-scrollbar-thumb:hover {
-   background: rgb(var(--dark-peach));
+    background: rgb(var(--dark-peach));
 }
-  
+
 html,
 body,
 #side-bar:hover {
     scrollbar-color: rgb(var(--dark-peach)) rgb(var(--dark-blue));
 }
-  
+
 blockquote,
 div.blockquote,
 #toc {
@@ -206,9 +222,8 @@ div.blockquote,
     border: solid 2px rgb(var(--dark-blue));
     box-shadow: 10px 10px 10px 0.1px rgb(12, 12, 31);
 }
-  
+
 #breadcrumbs, .pseudocrumbs {
     text-align: center;
     padding-top: 10px;
-}
 }
